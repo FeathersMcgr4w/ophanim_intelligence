@@ -16,9 +16,9 @@ Ophanim Intelligence is based on the concept of the angel "Ophanim," a powerful 
 
 👉 Frontend (FastAPI + Jinja2)
 Analysts access a simple web interface that organizes information hierarchically:
--> Global view grouped by category.
--> Indicators for a specific category.
--> Enriched details of an IOC (domain/IP/URL).
+> Global view grouped by category.
+> Indicators for a specific category.
+> Enriched details of an IOC (domain/IP/URL).
 
 👉 Backend (FastAPI + uvicorn)
 Acts as a coordinator: exposes the API for queries and orchestrates worker execution.
