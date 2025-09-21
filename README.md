@@ -1,12 +1,12 @@
 ![ophanim_icon](./img/ophanim.png)
-# Ophanim Intelligence
+# Ophanim Intelligence Project
 
-## Herramienta de inteligencia de amenazas, ciber inteligencia y ciberdefensa
+## Threat intelligence, cyber intelligence, and cyber defense tool
 
-El siguiente proyecto es una herramienta web que ofrece a los investigadores un servicio proactivo de información 24/7 acerca de dominios, urls y direcciones IPs relacionadas con actividades maliciosas, ilegales, fraude y actividades poco éticas. También se propone exponer dominios de sectores relevantes de la industria como gobierno, sector financiero, salud, educación, energía, transporte, telecomunicaciones. De cada dominio se expondrá información whois, geoip, dns, urls, certificado ssl, cabeceras http, estado del servidor, categoría y clasificación de rubro.
+The following project is a web-based tool that offers investigators a 24/7 proactive information service about domains, URLs, and IP addresses related to malicious, illegal, fraudulent, and unethical activities. It also aims to expose domains from relevant industry sectors such as government, finance, healthcare, education, energy, transportation, and telecommunications. For each domain, WHOIS, GEOIP, DNS, URLs, SSL certificate, HTTP headers, server status, category, and industry classification information will be exposed.
 
-Ophanim Intelligence se basa en el concepto del ángel "Ophanim" el cual es una entidad poderosa con ruedas llenas de ojos y espíritus vivos que todo lo ven. La herramienta propone la novedad de segmentar el internet para identificar por categorías los diferentes recursos alojados en el mundo cibernético.
+Ophanim Intelligence is based on the concept of the angel "Ophanim," a powerful entity with wheels full of eyes and living, all-seeing spirits. The tool proposes the innovative approach of segmenting the internet to identify the different resources hosted in the cyber world by category.
 
-## Arquitectura y Flujo del proyecto
+## Architecture and Project Flow
 ![ophanim_intelligence_app](./img/ophanim_intelligence_app.png)
 
