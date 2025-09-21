@@ -1,3 +1,4 @@
+![ophanim_icon](./img/ophanim.png)
 # Ophanim Intelligence
 
 ## Herramienta de inteligencia de amenazas, ciber inteligencia y ciberdefensa
@@ -7,4 +8,5 @@ El siguiente proyecto es una herramienta web que ofrece a los investigadores un 
 Ophanim Intelligence se basa en el concepto del ángel "Ophanim" el cual es una entidad poderosa con ruedas llenas de ojos y espíritus vivos que todo lo ven. La herramienta propone la novedad de segmentar el internet para identificar por categorías los diferentes recursos alojados en el mundo cibernético.
 
 ## Arquitectura y Flujo del proyecto
+![ophanim_intelligence_app](./img/ophanim_intelligence_app.png)
 
