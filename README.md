@@ -10,13 +10,8 @@ Ophanim Intelligence is based on the concept of the angel "Ophanim," a powerful 
 
 ![ophanim_network](./img/ophanim_network.png)
 
----
-
 ## IOCs
 The application will use the following IOCs (URLs, domains, IPs) as input data to feed the search engines and databases of urlHaus, threatFox, urlScan, and VirusTotal. This will allow specific data to be obtained to build the cybersecurity indicator profile for each domain or IP.
-
----
----
 
 ## Architecture and Project Flow
 ![ophanim_intelligence_app](./img/ophanim_intelligence_app.png)
@@ -46,9 +41,6 @@ The application will use the following IOCs (URLs, domains, IPs) as input data t
 > 
 > - All external traffic from workers to malicious APIs and domains is routed through TOR (SOCKS5), hiding the system's real IP address.
 
----
----
-
-## Web interface concept
+## Web Interface Concept
 ![ophanim_interface](./img/ophanim_full_interface.png)
 
