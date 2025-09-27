@@ -1,9 +1,10 @@
 # Ophanim Intelligence Project
 ![ophanim_icon](./img/ophanim.png)
 
-## Threat intelligence, cyber intelligence, and cyber defense tool
+## Threat & Cyber Intelligence
 
 The following project is a web-based tool that offers investigators a 24/7 proactive information service about domains, URLs, and IP addresses related to malicious, illegal, fraudulent, and unethical activities. It also aims to expose domains from relevant industry sectors such as government, finance, healthcare, education, energy, transportation, and telecommunications. For each domain, WHOIS, GEOIP, DNS, URLs, SSL certificate, HTTP headers, server status, category, and industry classification information will be exposed.
+The tool proposes an innovative approach: segmenting the Internet to identify the different resources hosted in the cyber world by category in a clear and centralized manner on a web platform.
 
 Ophanim Intelligence is based on the concept of the angel "Ophanim," a powerful entity with wheels full of eyes and living, all-seeing spirits. The tool proposes an innovative approach: segmenting the Internet to identify the different resources hosted in the cyber world by category in a clear and centralized manner on a web platform.
 
@@ -11,31 +12,43 @@ Ophanim Intelligence is based on the concept of the angel "Ophanim," a powerful 
 
 ---
 
+## IOCs
+The application will use the following IOCs (URLs, domains, IPs) as input data to feed the search engines and databases of urlHaus, threatFox, urlScan, and VirusTotal. This will allow specific data to be obtained to build the cybersecurity indicator profile for each domain or IP.
+
+---
+---
+
 ## Architecture and Project Flow
 ![ophanim_intelligence_app](./img/ophanim_intelligence_app.png)
 
-👉 Frontend (FastAPI + Jinja2)
-Analysts access a simple web interface that organizes information hierarchically:
-> Global view grouped by category.
-> Indicators for a specific category.
-> Enriched details of an IOC (domain/IP/URL).
+> #### Frontend (FastAPI + Jinja2)
+>
+> - Analysts access a simple web interface that organizes information hierarchically:
+> - Global view grouped by category.
+> - Indicators for a specific category.
+> - Enriched details of an IOC (domain/IP/URL).
 
-👉 Backend (FastAPI + uvicorn)
-Acts as a coordinator: exposes the API for queries and orchestrates worker execution.
+> #### Backend (FastAPI + uvicorn)
+> 
+> - Acts as a coordinator: exposes the API for queries and orchestrates worker execution.
 
-👉 Workers (urlHaus, ThreatFox, urlScan + VirusTotal)
-Each worker queries external APIs (urlHaus, ThreatFox, urlScan, VT).
-Enrich data with AlienVault.
-If AlienVault does not respond, they use local tools (curl, openssl, whois, ping, nslookup) to complete the information.
+> #### Workers (urlHaus, ThreatFox, urlScan + VirusTotal)
+> 
+> - Each worker queries external APIs (urlHaus, ThreatFox, urlScan, VT).
+> - Enrich data with AlienVault.
+> - If AlienVault does not respond, they use local tools (curl, openssl, whois, ping, nslookup) to complete the information.
 
-👉 Persistence in MongoDB
-Results are saved in MongoDB. Ensures that information is accessible and searchable from the frontend.
+> #### Persistence in MongoDB
+> 
+> - Results are saved in MongoDB. Ensures that information is accessible and searchable from the frontend.
 
-👉 TOR Proxy
-All external traffic from workers to malicious APIs and domains is routed through TOR (SOCKS5), hiding the system's real IP address.
+> #### TOR Proxy
+> 
+> - All external traffic from workers to malicious APIs and domains is routed through TOR (SOCKS5), hiding the system's real IP address.
 
+---
 ---
 
 ## Web interface concept
-![ophanim_interface](./img/ophanim_interface.png)
+![ophanim_interface](./img/ophanim_full_interface.png)
 
